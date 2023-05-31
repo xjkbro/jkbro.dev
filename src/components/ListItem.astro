@@ -1,0 +1,22 @@
+---
+export interface Props {
+  title: string;
+  body: string;
+  date: string;
+  href: string;
+}
+
+const { href, title, body, date } = Astro.props;
+---
+
+<li class=" w-full">
+  <div class="flex justify-between items-center my-2 text-neutral-200">
+    <a href={href}>
+      <h2 class="border-b border-neutral-600">
+        {title}
+      </h2>
+    </a>
+    <span class="text-xs">{date}</span>
+  </div>
+  <!-- <p class="text-xs text-neutral-400">{body}</p> -->
+</li>
