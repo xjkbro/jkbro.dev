@@ -6,9 +6,10 @@ import ListItem from "../components/ListItem.astro";
 
 <Layout title="jkbro.dev">
   <main>
-    <h1><span class="text-gradient font-bold">jkbro.dev</span></h1>
+    <!-- <h1><span class="text-gradient font-bold">jkbro.dev</span></h1> -->
+    <div><img src="./logo.svg" alt="jkbro.dev"  class="w-40"/></div>
     <p class="text-neutral-400 text-sm my-4">
-      Hello, my name is Jason-Kyle. As a passionate creator, I derive immense
+      Hello, my name is <b>Jason-Kyle</b>. As a passionate creator, I derive immense
       satisfaction from bringing ideas to life. My creative pursuits span a wide
       range, encompassing programs, apps, videos, culinary delights, and
       innovative gadgets. I possess an innate ability to think outside the box
@@ -26,43 +27,42 @@ import ListItem from "../components/ListItem.astro";
     </p>
     <a href="http://jkdelara.com/Resume2023.pdf" class="text-neutral-200 text-sm my-4 border-b border-neutral-600">Resume</a>
     <section>
-      <h2 class="text-gradient font-semibold mb-4">Projects</h2>
+      <h2 class="text-yellow-400 font-semibold text-lg mb-4">Projects</h2>
       <ul>
         <ListItem
-          href="https://jkdelara.com"
-          title="jkdelara"
-          body="Next.js 13, Tailwind CSS, Three.js, Framer Motion, and Strapi."
-          date="Jan. 28, 2023"
+          href="https://dgn.jkbro.dev"
+          title="DGN"
+          body="TailwindCSS, ThreeJS, and GSAP."
+          date="Valorant eSports Team"
         />
         <ListItem
           href="https://fitboi.jkbro.dev"
-          title="fitboii"
+          title="Fitboii"
           body="Next.js, Tailwind CSS, shadcn/ui, and Supabase."
-          date="May 01, 2023"
-
+          date="Fit of the Day App"
         />
         <ListItem
           href="https://supacommerce.jkbro.dev"
-          title="supacommerce"
+          title="SupaCommerce"
           body="Next.js, Tailwind CSS, DaisyUI and Supabase."
-          date="Apr. 24, 2023"
+          date="eCommerce Platform with an Admin Portal"
         />
         <ListItem
           href="https://cangrid.vercel.app"
-          title="cangrid"
+          title="CanGrid"
           body="Next.js, Tailwind CSS, Framer Motion, and Firebase."
-          date="May. 17, 2021"
+          date="Photographer's dream Social Media Platform"
         />
         <ListItem
           href="https://flappydunsparce.vercel.app"
-          title="flappy dunsparce"
+          title="Flappy Dunsparce"
           body="React, PhaserJS, Styled Components."
-          date="Sept. 01, 2021"
+          date="Flappy Bird Clone"
         />
       </ul>
     </section>
     <!-- <section>
-        <h2 class="text-gradient font-semibold mb-4">Blog</h2>
+        <h2 class="text-yellow-400 font-semibold text-lg mb-4">Blog</h2>
         <ul role="list" class="link-card-grid">
           <Card
             href="https://docs.astro.build/"
@@ -103,13 +103,13 @@ import ListItem from "../components/ListItem.astro";
   section {
     margin: 2rem 0;
   }
-  .text-gradient {
+  /* .text-gradient {
     background-image: var(--accent-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 400%;
     background-position: 0%;
-  }
+  } */
   .instructions {
     line-height: 1.6;
     margin: 1rem 0;

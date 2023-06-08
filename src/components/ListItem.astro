@@ -7,17 +7,15 @@ export interface Props {
 }
 
 const { href, title, date } = Astro.props;
-// const { href, title, body, date } = Astro.props;
 ---
 
-<li class=" w-full">
-  <div class="flex justify-between items-center my-2 text-neutral-200">
+<li class="w-full">
+  <div class="flex justify-between gap-8 items-center my-2 text-neutral-200">
     <a href={href}>
-      <h2 class="border-b border-neutral-600">
+      <h2 class="border-b border-neutral-600 mb-0">
         {title}
       </h2>
     </a>
-    <span class="text-xs">{date}</span>
+    <span class="text-xs text-right flex items-center whitespace-break-spaces md:whitespace-nowrap">{date}</span>
   </div>
-  <!-- <p class="text-xs text-neutral-400">{body}</p> -->
 </li>
