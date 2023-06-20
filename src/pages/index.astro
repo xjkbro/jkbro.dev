@@ -5,63 +5,74 @@ import ListItem from "../components/ListItem.astro";
 ---
 
 <Layout title="jkbro.dev">
-  <main>
-    <!-- <h1><span class="text-gradient font-bold">jkbro.dev</span></h1> -->
-    <div><img src="./logo.svg" alt="jkbro.dev"  class="w-40"/></div>
-    <p class="text-neutral-400 text-sm my-4">
-      Hello, my name is <b>Jason-Kyle</b>. As a passionate creator, I derive immense
-      satisfaction from bringing ideas to life. My creative pursuits span a wide
-      range, encompassing programs, apps, videos, culinary delights, and
-      innovative gadgets. I possess an innate ability to think outside the box
-      and envision groundbreaking concepts that can positively impact the world.
-      </p>
-    <p class="text-neutral-400 text-sm my-4">
-
-      My primary objective is to drive companies forward by translating their
-      vision into tangible, cutting-edge applications using the latest
-      technologies. Armed with tools like VS Code and Chrome, complemented by a
-      dash of preworkout for an extra burst of energy, I thrive on the challenge
-      of transforming abstract business ideas into fully functional, scalable
-      solutions. Let's embark on a collaborative journey and craft something
-      extraordinary together that leaves a lasting impression on the world!
-    </p>
-    <a href="http://jkdelara.com/Resume2023.pdf" class="text-neutral-200 text-sm my-4 border-b border-neutral-600">Resume</a>
-    <section>
-      <h2 class="text-yellow-400 font-semibold text-lg mb-4">Projects</h2>
-      <ul>
-        <ListItem
-          href="https://dgn.jkbro.dev"
-          title="DGN"
-          body="TailwindCSS, ThreeJS, and GSAP."
-          date="Valorant eSports Team"
-        />
-        <ListItem
-          href="https://fitboi.jkbro.dev"
-          title="Fitboii"
-          body="Next.js, Tailwind CSS, shadcn/ui, and Supabase."
-          date="Fit of the Day App"
-        />
-        <ListItem
-          href="https://supacommerce.jkbro.dev"
-          title="SupaCommerce"
-          body="Next.js, Tailwind CSS, DaisyUI and Supabase."
-          date="eCommerce Platform with an Admin Portal"
-        />
-        <ListItem
-          href="https://cangrid.vercel.app"
-          title="CanGrid"
-          body="Next.js, Tailwind CSS, Framer Motion, and Firebase."
-          date="Photographer's dream Social Media Platform"
-        />
-        <ListItem
-          href="https://flappydunsparce.vercel.app"
-          title="Flappy Dunsparce"
-          body="React, PhaserJS, Styled Components."
-          date="Flappy Bird Clone"
-        />
-      </ul>
-    </section>
-    <!-- <section>
+	<main>
+		<!-- <h1><span class="text-gradient font-bold">jkbro.dev</span></h1> -->
+		<div><img src="./logo.svg" alt="jkbro.dev" class="w-40" /></div>
+		<p class="text-neutral-400 text-sm my-4">
+			Hello, my name is <b>Jason-Kyle</b>. As a passionate creator, I
+			derive immense satisfaction from bringing ideas to life. My creative
+			pursuits span a wide range, encompassing programs, apps, videos,
+			culinary delights, and innovative gadgets. I possess an innate
+			ability to think outside the box and envision groundbreaking
+			concepts that can positively impact the world.
+		</p>
+		<p class="text-neutral-400 text-sm my-4">
+			My primary objective is to drive companies forward by translating
+			their vision into tangible, cutting-edge applications using the
+			latest technologies. Armed with tools like VS Code and Chrome,
+			complemented by a dash of preworkout for an extra burst of energy, I
+			thrive on the challenge of transforming abstract business ideas into
+			fully functional, scalable solutions. Let's embark on a
+			collaborative journey and craft something extraordinary together
+			that leaves a lasting impression on the world!
+		</p>
+		<a
+			href="http://jkdelara.com/Resume2023.pdf"
+			class="text-neutral-200 text-sm my-4 border-b border-neutral-600"
+			>Resume</a
+		>
+		<section>
+			<h2 class="text-yellow-400 font-semibold text-lg mb-4">Projects</h2>
+			<ul>
+				<ListItem
+					href="https://dgn.jkbro.dev"
+					title="DGN"
+					body="TailwindCSS, ThreeJS, and GSAP."
+					date="Valorant eSports Team"
+				/>
+				<ListItem
+					href="https://supacommerce.jkbro.dev"
+					title="SupaCommerce"
+					body="Next.js, Tailwind CSS, DaisyUI and Supabase."
+					date="eCommerce Platform with an Admin Portal"
+				/>
+				<!-- <ListItem
+					href="https://fitboi.jkbro.dev"
+					title="Fitboii"
+					body="Next.js, Tailwind CSS, shadcn/ui, and Supabase."
+					date="Fit of the Day App"
+				/> -->
+				<ListItem
+					href="https://cangrid.vercel.app"
+					title="CanGrid"
+					body="Next.js, Tailwind CSS, Framer Motion, and Firebase."
+					date="Photographer's dream Social Media Platform"
+				/>
+				<ListItem
+					href="https://donutboy.jkbro.dev"
+					title="DonutBoy"
+					body="ThreeJS Vite"
+					date="Donut Packing Game"
+				/>
+				<ListItem
+					href="https://flappydunsparce.vercel.app"
+					title="Flappy Dunsparce"
+					body="React, PhaserJS, Styled Components."
+					date="Flappy Bird Clone"
+				/>
+			</ul>
+		</section>
+		<!-- <section>
         <h2 class="text-yellow-400 font-semibold text-lg mb-4">Blog</h2>
         <ul role="list" class="link-card-grid">
           <Card
@@ -86,53 +97,53 @@ import ListItem from "../components/ListItem.astro";
           />
         </ul>
       </section> -->
-  </main>
+	</main>
 </Layout>
 
 <style>
-  main {
-    margin: auto;
-    padding: 1.5rem;
-    max-width: 60ch;
-  }
-  h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 0;
-  }
-  section {
-    margin: 2rem 0;
-  }
-  /* .text-gradient {
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	section {
+		margin: 2rem 0;
+	}
+	/* .text-gradient {
     background-image: var(--accent-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 400%;
     background-position: 0%;
   } */
-  .instructions {
-    line-height: 1.6;
-    margin: 1rem 0;
-    border: 1px solid rgba(var(--accent), 25%);
-    background-color: white;
-    padding: 1rem;
-    border-radius: 0.4rem;
-  }
-  .instructions code {
-    font-size: 0.875em;
-    font-weight: bold;
-    background: rgba(var(--accent), 12%);
-    color: rgb(var(--accent));
-    border-radius: 4px;
-    padding: 0.3em 0.45em;
-  }
-  .instructions strong {
-    color: rgb(var(--accent));
-  }
-  .link-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-    gap: 1rem;
-    padding: 0;
-  }
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
 </style>
