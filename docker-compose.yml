@@ -1,13 +1,30 @@
-version: "3.8"
-networks:
-    caddy_network:
-        external: true
 services:
-    jkbrodev:
-        build: .
-        container_name: jkbrodev
-        ports:
-            - 3000:3000
-        command: bun run preview
-        networks: 
-          - caddy_network
+  jkbrodev:
+    build: .
+    container_name: jkbrodev
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - traefik-public
+    command: bun run preview
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /home/jason/jkbrodev/data:/data
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.jkbrodev.entrypoints=http"
+      - "traefik.http.routers.jkbrodev.rule=Host(`dev.jsondelara.com`)"
+      - "traefik.http.middlewares.jkbrodev-https-redirect.redirectscheme.scheme=https"
+      - "traefik.http.routers.jkbrodev.middlewares=jkbrodev-https-redirect"
+      - "traefik.http.routers.jkbrodev-secure.entrypoints=https"
+      - "traefik.http.routers.jkbrodev-secure.rule=Host(`dev.jsondelara.com`)"
+      - "traefik.http.routers.jkbrodev-secure.tls=true"
+      - "traefik.http.routers.jkbrodev-secure.service=jkbrodev"
+      - "traefik.http.services.jkbrodev.loadbalancer.server.port=3000"
+      - "traefik.docker.network=traefik-public"
+networks:
+  traefik-public:
+    external: true
+
